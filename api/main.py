@@ -29,3 +29,7 @@ def ask(question: str):
         "answer": answer,
         "sources": results['metadatas'][0]
     }
+    
+@app.get("/health")
+def health():
+    return {"status": "ok"}
