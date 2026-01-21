@@ -1,0 +1,23 @@
+## =============================================================================
+# TODO LIST - EMBEDDING_SERVICE.PY - CURRENT CAPABILITIES
+# =============================================================================
+
+# ✅ COMPLETED Jan 20
+# - embed_text(): Embed a single piece of text using sentence-transformers
+# - embed_all_chunks(): Loop through all chunks, embed each, save results
+# - Progress bar with tqdm
+# - Saved 14,285 chunks with embeddings to JSON (2:35 runtime on CPU)
+
+# 🔧 ADD LATER (if needed to improve quality):
+# - GPU support: Reinstall PyTorch with CUDA for 5-20x speedup
+# - Batch embedding: model.encode(list_of_texts) instead of one at a time
+# - Caching: Don't re-embed chunks that haven't changed
+
+# 🚀 V2 FEATURES (production-ready):
+# - OpenAI embeddings: Higher quality, costs money
+# - Cohere embeddings: Alternative provider
+# - Rate limiting: Respect API limits
+# - Cost tracking: Monitor spend on embedding APIs
+# - EmbeddingCache class: Redis-backed cache for embeddings
+
+# =============================================================================
