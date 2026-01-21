@@ -1,0 +1,22 @@
+# =============================================================================
+# TODO LIST - VECTOR_STORE.PY
+# =============================================================================
+
+# ✅ COMPLETED (Jan 20):
+# - create_vector_store(): Load 14,285 chunks with embeddings into ChromaDB (3:24 runtime)
+# - search(): Embed query with sentence-transformers, return most similar chunks
+# - Tested with "How do I handle errors in FastAPI?" — returns relevant results
+# - Semantic search is working end-to-end with ChromaDB local vector store
+
+# 🔧 ADD LATER (if needed to improve quality):
+# - Metadata filtering: Search only within specific sections/pages
+# - Delete/update: Remove or update individual chunks
+# - Persistence check: Don't re-index if already exists
+# - Batch insert: Add chunks in batches instead of one at a time (faster)
+
+# 🚀 V2 FEATURES (production-ready):
+# - Qdrant/Pinecone: Switch to cloud-hosted vector DB
+# - Connection pooling: Handle multiple concurrent searches
+# - Hybrid search: Combine vector search with keyword search
+
+# =============================================================================
