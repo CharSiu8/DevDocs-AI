@@ -1,0 +1,18 @@
+# =============================================================================
+# TODO LIST - LLM_SERVICE.PY - CURRENT CAPABILITIES(Jan 21)
+# =============================================================================
+
+# ✅ COMPLETED (Jan 20):
+# - generate_answer(): Takes query + retrieved chunks, returns synthesized answer
+# - Simple prompt, no bloat, just works
+
+# 🔧 ADD LATER (if needed):
+# - Streaming responses
+# - Token counting / cost tracking
+# - Different models for different use cases
+
+# 🚀 V2 FEATURES:
+# - Local LLM option (Ollama)
+# - Response caching
+
+# =============================================================================
