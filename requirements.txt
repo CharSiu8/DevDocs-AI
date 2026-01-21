@@ -9,6 +9,7 @@ openai==1.10.0
 # Embeddings & Vector Store
 sentence-transformers==2.3.1
 chromadb==0.4.22
+pinecone-client
 
 # Scraping
 requests==2.31.0
