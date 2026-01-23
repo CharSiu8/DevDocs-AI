@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DevDocs AI</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 50px auto; padding: 20px; background: #1a1a1a; color: #e0e0e0; }
+        h1 { color: #fff; }
+        input { width: 70%; padding: 10px; font-size: 16px; background: #333; color: #e0e0e0; border: 1px solid #555; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; background: #4a9eff; color: #fff; border: none; }
+        button:hover { background: #3a8eef; }
+        #result { margin-top: 20px; white-space: pre-wrap; }
+        #sources { margin-top: 10px; font-size: 14px; color: #888; }
+    </style>
+</head>
+<body>
+    <h1>Search FastAPI Documentation</h1>
+    <input type="text" id="question" placeholder="Ask a question...">
+    <button onclick="search()">Search</button>
+    <div id="result"></div>
+    <div id="sources"></div>
+
+    <script>
+        async function search() {
+            const q = document.getElementById('question').value;
+            document.getElementById('result').innerText = 'Loading...';
+            document.getElementById('sources').innerText = '';
+            
+            const res = await fetch('/ask?question=' + encodeURIComponent(q));
+            const data = await res.json();
+            
+            document.getElementById('result').innerText = data.answer;
+            document.getElementById('sources').innerText = 'Sources: ' + data.sources.map(s => s.title).join(', ');
+        }
+    </script>
+</body>
+</html>
