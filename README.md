@@ -2,7 +2,7 @@
 
 RAG system for querying FastAPI documentation with semantic search and LLM-generated answers.
 
-**🔗 Live Demo:** https://charsiu8-devdocs-ai.hf.space/ask?question=How do I create routes
+**🔗 Live Demo:** https://charsiu8-devdocs-ai.hf.space/
 
 ## What it does
 
